@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ titre }}</title>
+    </head>
+
+    <body>
+        <h1>{{ titre }}</h1>
+	<p>{{ phrase_comme_string }}</p>
+        <ul>
+        {% for mot in phrase_comme_tableau %}
+            <li>{{ mot }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
+
