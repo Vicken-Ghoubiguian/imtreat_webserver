@@ -12,7 +12,9 @@ This project is to develop a webserver which will allow:
 
 Others functionalities could be added.
 
-## prerequisites
+# prerequisites
+
+### Introduction
 
 To deploy this web application, you must install the following Python packages:
 
@@ -22,7 +24,22 @@ To deploy this web application, you must install the following Python packages:
 
 All of that is listed in the `requirements.txt` file.
 
-# Finally
+### If you want develop it...
+
+...you need to install a virtual environment.
+
+To do this, you must install the `python3-venv` package as follows:
+
+```bash
+sudo apt install python3-venv
+```
+Once done, you must create your virtual environment in the project repo.
+
+To do this, 
+
+### If you want deploy it...
+
+### Finally
 
 To install all of required Python packages, execute the following command:
 
