@@ -30,14 +30,47 @@ All of that is listed in the `requirements.txt` file.
 
 ...you need to install a virtual environment.
 
-To do this, you must install the `python3-venv` package as follows:
+Before all, clone the project's repo using this command:
+
+```bash
+git clone https://gitlab.imerir.com/eric.ghoubiguian/opencv_webserver
+```
+
+Now to install the virtual environment, you must in the project's directory:
+
+```bash
+cd opencv_webserver
+```
+
+Then you must install the `python3-venv` package as follows:
 
 ```bash
 sudo apt install python3-venv
 ```
 Once done, you must create your virtual environment in the project repo.
 
-To do this, 
+To do this, execute this commande:
+
+```bash
+python3 -m venv chosen_name_for_your_virtual_environment //chosen_name_for_your_virtual_environment can be replaced by the name you want
+```
+Then execute the following command to activate your virtual environment:
+
+```bash
+source chosen_name_for_your_virtual_environment/bin/activate
+```
+Now your prompt must be like that:
+
+```bash
+(chosen_name_for_your_virtual_environment) username@machinename:~$
+```
+If it's the case, congratulations. Finally execute this command to install all required Python packages listed in the requirements.txt file:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Now you're ready.
 
 ### If you want deploy it...
 
