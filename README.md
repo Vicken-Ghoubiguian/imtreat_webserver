@@ -22,6 +22,8 @@ To deploy this web application, you must install the following Python packages:
 
 * opencv-contrib-python :
 
+* numpy :
+
 All of that is listed in the `requirements.txt` file.
 
 ### If you want develop it...
