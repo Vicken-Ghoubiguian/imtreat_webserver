@@ -5,12 +5,12 @@ app = Flask(__name__)
 @app.errorhandler(404)
 def page_not_found_function(e):
 
-	return "<h1 style='color: red;'>Error 404: Page not found, sorry...</h1>", 404
+	return render_template('errors.html', error_label="Error 404", error_description="Page not found, sorry..."), 404
 
 @app.errorhandler(500)
 def internal_problem_function(e):
 
-	return "<h1 style='color: red;'>Error 500: Internal problem, sorry...</h1>", 500
+	return render_template('errors.html', error_label="Error 500", error_description="Internal problem, sorry..."), 500
 
 @app.route('/', methods=['GET'])
 def home():
