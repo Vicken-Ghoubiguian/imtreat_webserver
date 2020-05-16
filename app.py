@@ -1,5 +1,7 @@
 from flask import Flask, render_template, Response
 
+import cv2
+
 app = Flask(__name__)
 
 @app.errorhandler(404)
@@ -19,7 +21,9 @@ def home():
 
 	phrase_comme_tableau = ["Hello", "World", "My", "master", "will", "rule", "you", "for", "ever", "Hahahaha"]
 
-	return render_template('main.html', titre="Bienvenue !", phrase_comme_tableau=phrase_comme_tableau, phrase_comme_string=phrase_comme_string), 200
+	opencv_version = cv2.__version__
+
+	return render_template('main.html', titre="Bienvenue !", phrase_comme_tableau=phrase_comme_tableau, phrase_comme_string=phrase_comme_string,opencv_version=opencv_version), 200
 
 if __name__ == '__main__':
 
