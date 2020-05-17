@@ -10,6 +10,11 @@ def page_not_found_function(e):
 
 	return render_template('errors.html', error_label="Error 404", error_description="Page not found, sorry..."), 404
 
+@app.errorhandler(405)
+def method_not_allowed_function(e):
+
+	return render_template('errors.html', error_label="Error 405", error_description="Method not allowed, sorry..."), 405
+
 @app.errorhandler(500)
 def internal_problem_function(e):
 
