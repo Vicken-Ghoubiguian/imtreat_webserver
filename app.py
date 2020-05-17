@@ -1,6 +1,7 @@
 from flask import Flask, render_template, Response
 
 import cv2
+import sys
 
 app = Flask(__name__)
 
@@ -23,7 +24,11 @@ def home():
 
 	opencv_version = cv2.__version__
 
-	return render_template('main.html', titre="Bienvenue !", phrase_comme_tableau=phrase_comme_tableau, phrase_comme_string=phrase_comme_string,opencv_version=opencv_version), 200
+	python_version = sys.version
+
+	python_version_info = sys.version_info
+
+	return render_template('main.html', titre="Bienvenue !", phrase_comme_tableau=phrase_comme_tableau, phrase_comme_string=phrase_comme_string,opencv_version=opencv_version, python_version=python_version, python_version_info=python_version_info), 200
 
 if __name__ == '__main__':
 
