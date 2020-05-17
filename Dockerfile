@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM python:latest
 
 LABEL maintainer="ericghoubiguian@live.fr"
 
