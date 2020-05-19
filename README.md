@@ -12,9 +12,7 @@ This project is to develop a webserver which will allow:
 
 Others functionalities could be added.
 
-# prerequisites
-
-### Introduction
+### prerequisites
 
 To deploy this web application, you must install the following Python packages:
 
@@ -69,11 +67,19 @@ If it's the case, congratulations. Finally execute this command to install all r
 ```bash
 pip3 install -r requirements.txt
 ```
-
 Now you're ready.
 
 ### If you want deploy it...
 
+## ...via Dockerfile
+
+## ...via stored-on-Docker hub image
+
+There is a prepared Docker image on Docker Hub available (here)[https://hub.docker.com/r/wicken/opencv_webserver]. To get the opencv_webserver image from Docker Hub, execute this command:
+
+```bash
+sudo docker pull wicken/opencv_webserver
+```
 ### Finally
 
 To install all of required Python packages, execute the following command:
