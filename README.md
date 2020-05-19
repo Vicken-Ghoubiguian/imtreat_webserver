@@ -75,7 +75,7 @@ Now you're ready.
 
 ## ...via stored-on-Docker hub image
 
-There is a prepared Docker image on Docker Hub available (here)[https://hub.docker.com/r/wicken/opencv_webserver]. To get the opencv_webserver image from Docker Hub, execute this command:
+There is a prepared Docker image on Docker Hub available [here](https://hub.docker.com/r/wicken/opencv_webserver). To get the opencv_webserver image from Docker Hub, execute this command:
 
 ```bash
 sudo docker pull wicken/opencv_webserver
