@@ -73,6 +73,23 @@ Now you're ready.
 
 ## ...via Dockerfile
 
+```bash
+git clone https://gitlab.imerir.com/eric.ghoubiguian/opencv_webserver
+```
+
+```bash
+cd opencv_webserver
+```
+
+
+```bash
+sudo docker image build -t <image_name>:<image_tag> .
+```
+
+
+```bash
+sudo docker container run -it <image_name>
+```
 ## ...via stored-on-Docker hub image
 
 There is a prepared Docker image on Docker Hub available [here](https://hub.docker.com/r/wicken/opencv_webserver). To get the opencv_webserver image from Docker Hub, execute this command:
