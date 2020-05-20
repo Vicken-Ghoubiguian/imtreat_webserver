@@ -11,10 +11,7 @@ COPY . /opencv_webserver
 WORKDIR /opencv_webserver
 
 #
-RUN apt upgrade -y
-
-#
-RUN apt update -y
+RUN apt upgrade -y && apt update -y
 
 #Install the pip3 utilitary to manage and install python packages 
 RUN apt install python3-pip -y
